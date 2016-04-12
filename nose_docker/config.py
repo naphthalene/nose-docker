@@ -41,6 +41,7 @@ class TestConfig(object):
 
     @classmethod
     def load(cls):
+        print os.path.abspath('.')
         yml_path = os.path.abspath('./.nose-docker.yaml')
         if not os.path.exists(yml_path):
             return None
